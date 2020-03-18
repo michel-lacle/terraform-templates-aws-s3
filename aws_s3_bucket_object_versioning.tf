@@ -1,5 +1,5 @@
 
-resource "aws_s3_bucket_object" "s3-standard" {
+resource "aws_s3_bucket_object" "s3-versioning" {
   bucket = aws_s3_bucket.terraform-templates-aws-s3-versioning.bucket
   key    = "versioning.txt"
   source = "versioning.txt"
