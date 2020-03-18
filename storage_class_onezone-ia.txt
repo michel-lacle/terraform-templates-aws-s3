@@ -1,0 +1,1 @@
+one zone infrequently accessed data
