@@ -1,9 +1,9 @@
 
-resource "aws_s3_bucket_object" "s3-standard" {
+resource "aws_s3_bucket_object" "s3-intelligent-tiering" {
   bucket = aws_s3_bucket.terraform-templates-aws-s3.bucket
-  key    = "s3-standard"
-  source = "storage_class_standard.txt"
+  key    = "storage_class_intelligent-tiering.txt"
+  source = "storage_class_intelligent-tiering.txt"
 
   # most expensive storage tier
-  storage_class = "STANDARD"
+  storage_class = "INTELLIGENT_TIERING"
 }

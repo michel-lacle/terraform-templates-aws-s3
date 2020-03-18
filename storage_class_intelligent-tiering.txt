@@ -1,0 +1,1 @@
+intelligent tiering storage class
